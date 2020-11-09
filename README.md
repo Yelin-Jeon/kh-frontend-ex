@@ -129,7 +129,7 @@ ul, lo
     <li><리스트></li>
     </ul>
 </ul>
-...
+'''
 
 ## 3.2. 순서 있는 목록
 
@@ -140,3 +140,34 @@ ol
 dl(description list)
 dt - 제목
 dd -설명
+
+# 4.  표
+
+- table
+- tr(table row)
+- td(table define)
+- th(tag header)
+
+# 5. 이미지
+
+img 태그
+
+'''html
+<img src="이미지 url(또는 파일의 경로)"/>
+'''
+
+src- 이미지 url, 파일 경로
+alt - 대체 문구(alternative)
+width - 너비
+heigth -높이
+
+# 6. a 태그
+<a href="링크">링크이름</a>
+
+- href:주소
+- target:링크가 표시될 방법
+- download : 링크의 리소스를 다운
+
+target 속성
+- _blank
+- self 
