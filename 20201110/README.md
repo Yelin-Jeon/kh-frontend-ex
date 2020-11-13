@@ -215,3 +215,11 @@ style 태그 내부
 - :enabled - 활성화된 상태
 - :disabled - 비활성화
 - :checked - 체크된 상태
+
+## 10.3. 구조 가상 클래스
+
+- :root - 문서 전체
+- :not - 부정
+- :nt-children(n)
+  - 2n-1, odd
+  - 2n, even
