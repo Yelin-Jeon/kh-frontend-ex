@@ -1,4 +1,12 @@
+class 클로저{
+    멤버;
+    생성자(파라미터){
+        멤버 = 파라미터
+    }
+    메서드(){
 
+    }
+}
 
 function 생성자(파라미터){
     function 매서드(){
@@ -6,16 +14,15 @@ function 생성자(파라미터){
     return 메서드
 }
 function countdown(startsAt){
-    let data= startsAt;
+    let s=0;
     function counter(){
-        console.log(data--)
+        console.log(`${++s}회 호출됨.`)
     }
     return counter
 }
-const c1=countdown(10)
-const c2=countdown(10)
-c1()
-c1()
+const cc = 호출()
+cc()
+cc()
 c2()
 c2()
 

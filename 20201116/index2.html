@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>브라우저 제어하기</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.2/purify.min.js" integrity="sha512-T6jx0SL5artICbQxeQCg3iToWGEuWM6P2XjNxP1vMI6fNtgIb3dnVD5gpd/pkQKoMfi1ygq5ezv/Z2VB3lLGtw==" crossorigin="anonymous"></script>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="boxbox" class="box">._.</div>
+        <script>
+            const box = document.querySelector('#boxbox')
+                x = 0
+                y = 0
+                document.body.addEventListener('keydown', e => {
+                switch(e.key) {
+                    case 'ArrowUp':
+                        console.log('위')
+                        y-=5
+                        break;
+                    case 'ArrowDown':
+                        y+=5
+                    console.log('아래')
+                        break;
+                    case 'ArrowLeft':
+                        console.log('좌')
+                        x-=5
+                        break;
+                    case 'ArrowRight':
+                        console.log('우')
+                        x+=5
+                        break;
+                }
+                box.style.transform = `translate3d(${x}px, ${y}px,0)`
+            })
+        </script>
+    </body>
+</html>
