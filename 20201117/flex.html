@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flex!</title>
+    <style>
+        html, body{
+            margin:0;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display: flex;
+            width:100vw;
+            height:300px;
+            background-color: beige;
+        }
+
+        .flex-item{
+            flex:1 1 0;
+            padding:30px;
+        }
+        .flex-item>h1, p{
+            margin:0;
+        }
+        .flex-item>h1{
+            margin-bottom:1rem;
+        }
+        .c1{background-color:lightskyblue}
+        .c2{background-color:deepskyblue;}
+        .c3{background-color:dodgerblue;}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item c1">Learn more.
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="flex-item c2">item2</div>
+        <div class="flex-item c3">item3</div>
+    </div>
+</body>
+</html>

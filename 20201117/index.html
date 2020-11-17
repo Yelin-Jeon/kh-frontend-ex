@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 20201117</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before,*::after{
+            box-sizing:border-box;
+        }
+       
+       html, body{
+           margin:0;
+           font-family: 'Noto Sans KR', sans-serif;
+           line-height: 1.6;
+       }
+       .hero{
+           background-image: url('https://github.com/hyeyoom/kh-lecture-2020/blob/master/layout/img/bg.jpeg?raw=true'),
+            radial-gradient(#ccc,#111);
+            background-repeat: no-repeat;
+            background-blend-mode: multiply;
+            background-attachment: fixed;
+            background-position: center center;
+            height:100vh;
+            color:white;
+            padding-top:35rem;
+       }
+       h1,p,blockquote{
+           margin:0;
+       }
+
+       header{
+          
+        }
+
+       .container{
+           width: 85%;
+           margin :0 auto;
+           max-width:65em;
+       }
+       .primary-title{
+           font-size:clamp(3rem, calc(5vw+1rem),4.5rem);
+       }
+       .article-spacing{
+           margin-top: 5rem;
+           width:40%;
+       }
+
+       .article-spacing>h1{
+           font-size: 2rem;
+           margin-bottom: 1.5rem;
+       }
+       .article-spacing>p, blockquote{
+           font-size:1.3rem;
+           text-indent:1rem;
+           margin-bottom:2.4rem;
+       }
+
+       .article-spacing>blockquote{
+           padding-left: 2rem;
+           border-left: 5px solid black;
+           background-color: #f5f5f5;
+       }
+       .image-box{
+           margin-bottom: 1.2rem;
+           text-align: center;
+       }
+
+       .image-box>p{
+           font-size: 1.2rem;
+           color:#555555;
+       }
+       .image-box>img{
+        cursor: pointer;
+           width : 85%;
+           display:block;
+           margin : 0 auto;
+       }
+
+       footer{
+           background-color: rgba(0,0,0,0.9);
+           color: white;
+           padding: 5rem 0;
+       }
+
+       .footer-container{
+           width: 60%; 
+           margin : 0 auto;
+       }
+
+       .info-container{
+           display:flex;
+           padding-bottom: 4rem;
+           border-bottom: 2px solid white;
+       }
+
+       .info-item{
+           flex: 1 1 0;
+           padding: 0 1rem;
+       }
+
+       .info-item>h2{
+           font-size:1.5rem;
+           margin:0;
+           margin-bottom:1rem;
+       }
+       .info-item>p{
+           font-size:0.8rem;
+       }
+
+       .logo-container{
+           display: flex;
+           margin-top: 3rem;
+           justify-content: space-between;
+       }
+       .menu-box{
+           display: flex;
+       }
+
+       .menu-box>h4{
+           font-weight: 300;
+           padding:0 0.7rem;
+       }
+
+    </style>
+</head>
+<body> 
+    <header class="hero"> 
+        <div class="container">
+            <h1 class="primary-title">제목</h1>
+            <p>서브제목</p>
+            <p>time</p>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="container article-spacing">
+                <h1>제목1</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <blockquote>
+                    <p>Lorem Ipsum is simply dummy text </p>
+                    <p>Lorem Ipsum is simply dummy text </p>
+                </blockquote>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h1>제목2</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>별 그리고 하나의 하나에 까닭입니다. 이름과 잠, 어머님, 우는 있습니다. 하늘에는 별 노루, 내 위에 아스라히 나의 거외다. 불러 했던 별을 시와 사랑과 새겨지는 있습니다. 가득 나의 이웃 별들을 때 위에 봅니다. 한 경, 쓸쓸함과 오는 릴케 겨울이 지나가는 마디씩 계집애들의 까닭입니다. 이웃 이름과, 소녀들의 속의 나의 있습니다. 멀리 이네들은 별 추억과 봅니다. 가을 벌써 하나 이런 슬퍼하는 무덤 까닭입니다. 잔디가 어머니 별에도 파란 소학교 헤는 나의 가을로 어머니, 까닭입니다.</p>
+                <p>별 그리고 하나의 하나에 까닭입니다. 이름과 잠, 어머님, 우는 있습니다. 하늘에는 별 노루, 내 위에 아스라히 나의 거외다. 불러 했던 별을 시와 사랑과 새겨지는 있습니다. 가득 나의 이웃 별들을 때 위에 봅니다. 한 경, 쓸쓸함과 오는 릴케 겨울이 지나가는 마디씩 계집애들의 까닭입니다. 이웃 이름과, 소녀들의 속의 나의 있습니다. 멀리 이네들은 별 추억과 봅니다. 가을 벌써 하나 이런 슬퍼하는 무덤 까닭입니다. 잔디가 어머니 별에도 파란 소학교 헤는 나의 가을로 어머니, 까닭입니다.</p>
+                <div class="image-box">
+                    <img src="https://static.dw.com/image/49202627_303.jpg">
+                    <p>냠냠</p>
+                </div>
+                <p>별 그리고 하나의 하나에 까닭입니다. 이름과 잠, 어머님, 우는 있습니다. 하늘에는 별 노루, 내 위에 아스라히 나의 거외다. 불러 했던 별을 시와 사랑과 새겨지는 있습니다. 가득 나의 이웃 별들을 때 위에 봅니다. 한 경, 쓸쓸함과 오는 릴케 겨울이 지나가는 마디씩 계집애들의 까닭입니다. 이웃 이름과, 소녀들의 속의 나의 있습니다. 멀리 이네들은 별 추억과 봅니다. 가을 벌써 하나 이런 슬퍼하는 무덤 까닭입니다. 잔디가 어머니 별에도 파란 소학교 헤는 나의 가을로 어머니, 까닭입니다.</p>
+                <p>별 그리고 하나의 하나에 까닭입니다. 이름과 잠, 어머님, 우는 있습니다. 하늘에는 별 노루, 내 위에 아스라히 나의 거외다. 불러 했던 별을 시와 사랑과 새겨지는 있습니다. 가득 나의 이웃 별들을 때 위에 봅니다. 한 경, 쓸쓸함과 오는 릴케 겨울이 지나가는 마디씩 계집애들의 까닭입니다. 이웃 이름과, 소녀들의 속의 나의 있습니다. 멀리 이네들은 별 추억과 봅니다. 가을 벌써 하나 이런 슬퍼하는 무덤 까닭입니다. 잔디가 어머니 별에도 파란 소학교 헤는 나의 가을로 어머니, 까닭입니다.</p>
+                <p>별 그리고 하나의 하나에 까닭입니다. 이름과 잠, 어머님, 우는 있습니다. 하늘에는 별 노루, 내 위에 아스라히 나의 거외다. 불러 했던 별을 시와 사랑과 새겨지는 있습니다. 가득 나의 이웃 별들을 때 위에 봅니다. 한 경, 쓸쓸함과 오는 릴케 겨울이 지나가는 마디씩 계집애들의 까닭입니다. 이웃 이름과, 소녀들의 속의 나의 있습니다. 멀리 이네들은 별 추억과 봅니다. 가을 벌써 하나 이런 슬퍼하는 무덤 까닭입니다. 잔디가 어머니 별에도 파란 소학교 헤는 나의 가을로 어머니, 까닭입니다.</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="info-container">
+                <div class="info-item">
+                    <h2>Learn more.</h2>
+                    <p>Medium is an open platform where 170 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Learn more</p>
+                </div>
+                <div class="info-item">
+                    <h2>Learn more.</h2>
+                    <p>Medium is an open platform where 170 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Learn more</p>
+                </div>
+                <div class="info-item">
+                    <h2>Learn more.</h2>
+                    <p>Medium is an open platform where 170 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Learn more</p>
+                </div>
+            </div>
+            <div class="logo-container">
+                <div class="logo-box">
+                    <h1>로고로고</h1>
+                </div>
+                <div class="menu-box">
+                    <h4>About</h4>
+                    <h4>Help</h4>
+                    <h4>Legal</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
